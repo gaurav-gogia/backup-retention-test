@@ -1,0 +1,7 @@
+Resources:
+  SecureListener:
+    Type: "AWS::ElasticLoadBalancingV2::Listener"
+    Properties:
+      LoadBalancerArn: !Ref myLoadBalancer
+      Port: 443
+      Protocol: "HTTPS"

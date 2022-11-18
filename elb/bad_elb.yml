@@ -1,0 +1,7 @@
+Resources:
+  InSecureListener:
+    Type: "AWS::ElasticLoadBalancingV2::Listener"
+    Properties:
+      LoadBalancerArn: !Ref myLoadBalancer
+      Port: 80
+      Protocol: "HTTP"
