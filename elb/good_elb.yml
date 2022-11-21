@@ -1,5 +1,5 @@
 Resources:
-  SecureListener:
+  SecureListenerCFT:
     Type: "AWS::ElasticLoadBalancingV2::Listener"
     Properties:
       LoadBalancerArn: !Ref myLoadBalancer
