@@ -1,5 +1,5 @@
 Resources:
-  YesBucketPolicy:
+  YesBucketPolicyCFT:
     Type: "AWS::S3::Bucket"
     DeletionPolicy: Retain
     Properties:
@@ -15,7 +15,7 @@ Resources:
             ServerSideEncryptionByDefault:
               KMSMasterKeyID: test
               SSEAlgorithm: AES
-  SampleBucketPolicy:
+  SampleBucketPolicyCFT:
     Type: "AWS::S3::BucketPolicy"
     Properties:
       Bucket: !Ref DOC-EXAMPLE-BUCKET
