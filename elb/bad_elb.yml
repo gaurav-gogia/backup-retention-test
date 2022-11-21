@@ -1,7 +1,16 @@
 Resources:
-  InSecureListenerCFT:
+  InsecureListnereCFT:
     Type: "AWS::ElasticLoadBalancingV2::Listener"
     Properties:
+      DefaultActions:
+        - Type: "redirect"
+          RedirectConfig:
+            Protocol: "HTTP"
+            Port: "80"
+            Host: "#{host}"
+            Path: "/#{path}"
+            Query: "#{query}"
+            StatusCode: "HTTP_301"
       LoadBalancerArn: !Ref myLoadBalancer
       Port: 80
       Protocol: "HTTP"
