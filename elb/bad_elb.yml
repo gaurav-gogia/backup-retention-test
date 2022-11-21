@@ -1,5 +1,5 @@
 Resources:
-  InSecureListener:
+  InSecureListenerCFT:
     Type: "AWS::ElasticLoadBalancingV2::Listener"
     Properties:
       LoadBalancerArn: !Ref myLoadBalancer
